@@ -1849,6 +1849,22 @@ function App() {
                 {loading ? 'Registering...' : 'Register'}
               </button>
 
+              <button
+                type="button"
+                className="secondary-btn"
+                style={{ marginTop: '0.75rem', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', background: 'rgba(54, 197, 240, 0.1)', color: '#0284c7', border: '1px solid #38bdf8', padding: '0.75rem', borderRadius: '8px', cursor: 'pointer', fontWeight: 600 }}
+                onClick={() => {
+                  const demoUser = { id: 1, name: 'Admin User (Demo)', email: 'admin@salesdashboard.com', role: 'admin' };
+                  setCurrentUser(demoUser);
+                  setProfileName(demoUser.name);
+                  setAuthenticated(true);
+                  setActivePage('Dashboard');
+                  setDemoData(true);
+                }}
+              >
+                🚀 Explore Demo Dashboard (Instant Access)
+              </button>
+
               <p className="auth-footer">
                 Already have an account? <button type="button" className="text-link-button" onClick={() => { setAuthMode('login'); setAuthView('default'); setAuthMessage({ type: '', text: '' }); }}>Login</button>
               </p>
@@ -1899,6 +1915,22 @@ function App() {
 
               <button className="primary-btn" type="submit" disabled={loading}>
                 {loading ? 'Signing in...' : 'Login'}
+              </button>
+
+              <button
+                type="button"
+                className="secondary-btn"
+                style={{ marginTop: '0.75rem', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', background: 'rgba(54, 197, 240, 0.1)', color: '#0284c7', border: '1px solid #38bdf8', padding: '0.75rem', borderRadius: '8px', cursor: 'pointer', fontWeight: 600 }}
+                onClick={() => {
+                  const demoUser = { id: 1, name: 'Admin User (Demo)', email: 'admin@salesdashboard.com', role: 'admin' };
+                  setCurrentUser(demoUser);
+                  setProfileName(demoUser.name);
+                  setAuthenticated(true);
+                  setActivePage('Dashboard');
+                  setDemoData(true);
+                }}
+              >
+                🚀 Explore Demo Dashboard (Instant Access)
               </button>
 
               <p className="auth-footer">
