@@ -9,10 +9,21 @@ import {
   filterDemoSales
 } from '../data/mockData';
 
+const DEFAULT_API_URL = 'https://social-cougars-hug.loca.lt/api';
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: localStorage.getItem('revora_api_url') || import.meta.env.VITE_API_URL || DEFAULT_API_URL,
   withCredentials: true,
-  timeout: 3000
+  timeout: 8000
+});
+
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('sales_auth_token') || sessionStorage.getItem('sales_auth_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  config.headers['Bypass-Tunnel-Reminder'] = 'true';
+  return config;
 });
 
 export const clearStoredAuth = () => {
@@ -35,9 +46,18 @@ api.interceptors.response.use(
 export const registerUser = async (payload) => {
   try {
     const response = await api.post('/auth/register', payload);
+    if (response.data?.token) {
+      localStorage.setItem('sales_auth_token', response.data.token);
+    }
+    if (response.data?.user) {
+      localStorage.setItem('sales_auth_user', JSON.stringify(response.data.user));
+    }
     return response.data;
   } catch (err) {
-    // If backend is offline, gracefully sign up as a demo user
+    if (err.response?.data?.message) {
+      throw err;
+    }
+    // Only if backend is completely offline:
     const user = {
       id: Date.now(),
       name: payload.name || 'REVORA User',
@@ -46,16 +66,25 @@ export const registerUser = async (payload) => {
       preferences: { theme: 'light', notificationsEnabled: true }
     };
     sessionStorage.setItem('sales_demo_user', JSON.stringify(user));
-    return { success: true, message: 'Account created successfully (Demo Mode)', user };
+    return { success: true, message: 'Account created (Demo Mode)', user };
   }
 };
 
 export const loginUser = async (payload) => {
   try {
     const response = await api.post('/auth/login', payload);
+    if (response.data?.token) {
+      localStorage.setItem('sales_auth_token', response.data.token);
+    }
+    if (response.data?.user) {
+      localStorage.setItem('sales_auth_user', JSON.stringify(response.data.user));
+    }
     return response.data;
   } catch (err) {
-    // If backend is offline, sign in with demo credentials
+    if (err.response?.data?.message) {
+      throw err;
+    }
+    // Only if backend is completely offline:
     const user = {
       id: 1,
       name: payload.email?.split('@')[0] || 'Admin User',
@@ -64,7 +93,7 @@ export const loginUser = async (payload) => {
       preferences: { theme: 'light', notificationsEnabled: true }
     };
     sessionStorage.setItem('sales_demo_user', JSON.stringify(user));
-    return { success: true, message: 'Welcome to REVORA Intelligence (Demo Mode)', user };
+    return { success: true, message: 'Signed in (Demo Mode)', user };
   }
 };
 
@@ -104,12 +133,8 @@ export const updateProfile = async (payload) => {
 };
 
 export const updatePassword = async (payload) => {
-  try {
-    const response = await api.patch('/auth/password', payload);
-    return response.data;
-  } catch {
-    return { success: true, message: 'Password updated (Demo Mode)' };
-  }
+  const response = await api.patch('/auth/password', payload);
+  return response.data;
 };
 
 export const updatePreferences = async (payload) => {
@@ -136,30 +161,18 @@ export const fetchAdminUsers = async () => {
 };
 
 export const updateUserRole = async (id, role) => {
-  try {
-    const response = await api.patch(`/admin/users/${id}/role`, { role });
-    return response.data;
-  } catch {
-    return { success: true, id, role };
-  }
+  const response = await api.patch(`/admin/users/${id}/role`, { role });
+  return response.data;
 };
 
 export const requestPasswordReset = async (email) => {
-  try {
-    const response = await api.post('/auth/forgot-password', { email });
-    return response.data;
-  } catch {
-    return { message: 'If an account exists, a reset link has been dispatched.' };
-  }
+  const response = await api.post('/auth/forgot-password', { email });
+  return response.data;
 };
 
 export const resetPassword = async (payload) => {
-  try {
-    const response = await api.post('/auth/reset-password', payload);
-    return response.data;
-  } catch {
-    return { message: 'Password successfully reset.' };
-  }
+  const response = await api.post('/auth/reset-password', payload);
+  return response.data;
 };
 
 export const fetchDashboard = async (params = {}) => {
@@ -264,12 +277,8 @@ export const submitPrediction = async (payload) => {
 };
 
 export const uploadCsv = async (csvData) => {
-  try {
-    const response = await api.post('/data/upload', { csv: csvData });
-    return response.data;
-  } catch {
-    return { message: 'Dataset parsed and loaded successfully into memory (Demo Mode).' };
-  }
+  const response = await api.post('/data/upload', { csv: csvData });
+  return response.data;
 };
 
 export default api;

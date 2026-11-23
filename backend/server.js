@@ -83,8 +83,8 @@ function getSessionToken(req) {
 function setSessionCookie(res, token, remember = true) {
   const options = {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+    secure: true,
+    sameSite: 'none',
     path: '/api'
   };
   if (remember) options.maxAge = 8 * 60 * 60 * 1000;
@@ -230,10 +230,12 @@ app.post('/api/auth/register', authRateLimiter, async (req, res) => {
       email: email.trim().toLowerCase(),
       role: process.env.ADMIN_EMAIL && email.trim().toLowerCase() === process.env.ADMIN_EMAIL.trim().toLowerCase() ? 'admin' : 'user'
     };
-    setSessionCookie(res, signToken(newUser));
+    const token = signToken(newUser);
+    setSessionCookie(res, token);
     return res.status(201).json({
       message: 'Registration successful.',
-      user: newUser
+      user: newUser,
+      token
     });
   } catch (error) {
     return databaseError(res, 'Unable to register user.', error);
@@ -267,7 +269,8 @@ app.post('/api/auth/login', authRateLimiter, async (req, res) => {
         name: user.name,
         email: user.email,
         role: user.role || 'user'
-      }
+      },
+      token
     });
   } catch (error) {
     return databaseError(res, 'Unable to log in.', error);
