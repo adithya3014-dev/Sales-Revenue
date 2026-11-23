@@ -9,7 +9,7 @@ import {
   filterDemoSales
 } from '../data/mockData';
 
-const DEFAULT_API_URL = 'https://social-cougars-hug.loca.lt/api';
+const DEFAULT_API_URL = 'https://bay-laid-analyst-technology.trycloudflare.com/api';
 
 const api = axios.create({
   baseURL: localStorage.getItem('revora_api_url') || import.meta.env.VITE_API_URL || DEFAULT_API_URL,
