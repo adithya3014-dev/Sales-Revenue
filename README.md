@@ -30,7 +30,7 @@ AI-powered sales analytics and revenue forecasting: Predict Growth. Power Succes
 
 ## Deploy the frontend to GitHub Pages
 
-The `main` branch is configured to build and deploy `frontend/` to GitHub Pages. In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. Push to `main` (or manually run the **Deploy frontend to GitHub Pages** workflow) to publish the site at `https://adithya3014-dev.github.io/SALES/`.
+The `main` branch is configured to build and deploy `frontend/` to GitHub Pages. In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. Push to `main` (or manually run the **Deploy frontend to GitHub Pages** workflow) to publish the site at `https://adithya3014-dev.github.io/Sales-Revenue/`.
 
 GitHub Pages hosts only the static frontend; it cannot run the Express API, MySQL database, or Python forecasting service. To use registration, login, sales data, or forecasting on the published site, deploy the backend and its dependencies separately, then set the Actions repository variable `VITE_API_URL` to the backend API URL (for example, `https://your-backend.example.com/api`). Set the backend's `ALLOWED_ORIGINS` to the exact Pages origin (for example, `https://adithya3014-dev.github.io`) so credentialed API requests and session cookies are accepted. Production session cookies require HTTPS.
 
