@@ -1,0 +1,96 @@
+CREATE DATABASE IF NOT EXISTS sales_revenue_dashboard;
+USE sales_revenue_dashboard;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  role VARCHAR(50) DEFAULT 'user',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS password_reset_tokens (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  token_hash VARCHAR(255) NOT NULL,
+  expires_at DATETIME NOT NULL,
+  used_at DATETIME NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_password_reset_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS user_settings (
+  user_id INT PRIMARY KEY,
+  theme ENUM('light', 'dark', 'aurora') NOT NULL DEFAULT 'light',
+  notifications_enabled BOOLEAN NOT NULL DEFAULT TRUE,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  CONSTRAINT fk_user_settings_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+ALTER TABLE user_settings
+  MODIFY theme ENUM('light', 'dark', 'aurora') NOT NULL DEFAULT 'light';
+
+CREATE TABLE IF NOT EXISTS sales (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  order_id VARCHAR(100) NOT NULL UNIQUE,
+  order_date DATE NOT NULL,
+  product_name VARCHAR(255) NOT NULL,
+  product_category VARCHAR(255) NOT NULL,
+  quantity_sold INT NOT NULL,
+  sales_revenue DECIMAL(12,2) NOT NULL,
+  unit_price DECIMAL(12,2) NOT NULL,
+  discount DECIMAL(5,2) DEFAULT 0,
+  customer_name VARCHAR(255) NOT NULL,
+  profit DECIMAL(12,2) NOT NULL,
+  promotion_details VARCHAR(255),
+  region VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS products (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  product_name VARCHAR(255) NOT NULL,
+  category VARCHAR(255) NOT NULL,
+  unit_price DECIMAL(12,2) NOT NULL,
+  stock_quantity INT DEFAULT 0,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  category_name VARCHAR(255) NOT NULL UNIQUE,
+  description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS customers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(255) NOT NULL,
+  customer_id VARCHAR(100) NOT NULL UNIQUE,
+  segment VARCHAR(100),
+  region VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS predictions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  prediction_period VARCHAR(100) NOT NULL,
+  product_name VARCHAR(255),
+  category_name VARCHAR(255),
+  predicted_revenue DECIMAL(12,2) NOT NULL,
+  actual_revenue DECIMAL(12,2),
+  model_name VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS model_metrics (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  model_name VARCHAR(255) NOT NULL,
+  mae DECIMAL(12,4) NOT NULL,
+  rmse DECIMAL(12,4) NOT NULL,
+  mape DECIMAL(12,4) NOT NULL,
+  evaluation_period VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

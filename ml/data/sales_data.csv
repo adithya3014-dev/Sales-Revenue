@@ -1,0 +1,289 @@
+order_date,product_name,category,quantity_sold,sales_revenue,unit_price,discount,promotion_details,customer_name
+2023-01-06,Laptop Pro 14,Electronics,8,13604.83,1834.92,7.32,Routine Promotion,Customer 3
+2023-01-06,4K Monitor,Electronics,10,7490.6,808.92,7.4,Routine Promotion,Customer 12
+2023-01-06,Smart Speaker,Electronics,24,7634.17,345.6,7.96,Routine Promotion,Customer 3
+2023-01-06,Tablet Pro,Electronics,11,7477.37,734.4,7.44,Routine Promotion,Customer 12
+2023-01-06,Executive Desk,Furniture,8,16399.472,1382.4,7.32,Routine Promotion,Customer 4
+2023-01-06,Standing Lamp,Furniture,30,12373.168,280.8,8.2,Routine Promotion,Customer 3
+2023-01-06,USB-C Hub,Accessories,116,7527.42,73.44,11.64,Routine Promotion,Customer 11
+2023-01-06,Noise Cancelling Headset,Electronics,19,7760.34,442.8,7.76,Routine Promotion,Customer 2
+2023-02-07,Laptop Pro 14,Electronics,8,14297.26,1970.84,9.32,Routine Promotion,Customer 4
+2023-02-07,4K Monitor,Electronics,13,10219.64,868.84,9.52,Routine Promotion,Customer 1
+2023-02-07,Smart Speaker,Electronics,30,10000.13,371.2,10.2,Routine Promotion,Customer 4
+2023-02-07,Tablet Pro,Electronics,14,9987.47,788.8,9.56,Routine Promotion,Customer 1
+2023-02-07,Executive Desk,Furniture,8,17234.128,1484.8,9.32,Routine Promotion,Customer 5
+2023-02-07,Standing Lamp,Furniture,37,15983.552,301.6,10.48,Routine Promotion,Customer 4
+2023-02-07,USB-C Hub,Accessories,144,9682.17,78.88,14.76,Routine Promotion,Customer 12
+2023-02-07,Noise Cancelling Headset,Electronics,23,9853.67,475.6,9.92,Routine Promotion,Customer 3
+2023-03-08,Laptop Pro 14,Electronics,8,12053.39,1699.0,11.32,Spring Sale,Customer 5
+2023-03-08,4K Monitor,Electronics,15,9931.74,749.0,11.6,Spring Sale,Customer 2
+2023-03-08,Smart Speaker,Electronics,37,10362.37,320.0,12.48,Spring Sale,Customer 5
+2023-03-08,Tablet Pro,Electronics,17,10209.79,680.0,11.68,Spring Sale,Customer 2
+2023-03-08,Executive Desk,Furniture,9,16338.128,1280.0,11.36,Spring Sale,Customer 6
+2023-03-08,Standing Lamp,Furniture,46,16678.944,260.0,12.84,Spring Sale,Customer 5
+2023-03-08,USB-C Hub,Accessories,176,9813.76,68.0,18,Spring Sale,Customer 1
+2023-03-08,Noise Cancelling Headset,Electronics,29,10444.18,410.0,12.16,Spring Sale,Customer 4
+2023-04-09,Laptop Pro 14,Electronics,8,13898.42,1834.92,5.32,Spring Sale,Customer 6
+2023-04-09,4K Monitor,Electronics,19,14484.2,808.92,5.76,Spring Sale,Customer 3
+2023-04-09,Smart Speaker,Electronics,45,14494.46,345.6,6.8,Spring Sale,Customer 6
+2023-04-09,Tablet Pro,Electronics,21,14521.73,734.4,5.84,Spring Sale,Customer 3
+2023-04-09,Executive Desk,Furniture,11,23006.672000000002,1382.4,5.44,Spring Sale,Customer 7
+2023-04-09,Standing Lamp,Furniture,55,22931.248000000003,280.8,7.2,Spring Sale,Customer 6
+2023-04-09,USB-C Hub,Accessories,211,13413.2,73.44,13.44,Spring Sale,Customer 2
+2023-04-09,Noise Cancelling Headset,Electronics,35,14506.13,442.8,6.4,Spring Sale,Customer 5
+2023-05-10,Laptop Pro 14,Electronics,8,14612.6,1970.84,7.32,Spring Sale,Customer 7
+2023-05-10,4K Monitor,Electronics,14,11244.18,868.84,7.56,Spring Sale,Customer 4
+2023-05-10,Smart Speaker,Electronics,34,11565.7,371.2,8.36,Spring Sale,Customer 7
+2023-05-10,Tablet Pro,Electronics,16,11656.57,788.8,7.64,Spring Sale,Customer 4
+2023-05-10,Executive Desk,Furniture,8,17614.24,1484.8,7.32,Spring Sale,Customer 8
+2023-05-10,Standing Lamp,Furniture,41,18075.536,301.6,8.64,Spring Sale,Customer 7
+2023-05-10,USB-C Hub,Accessories,160,10929.61,78.88,13.4,Spring Sale,Customer 3
+2023-05-10,Noise Cancelling Headset,Electronics,26,11371.41,475.6,8.04,Spring Sale,Customer 6
+2023-06-11,Laptop Pro 14,Electronics,8,12325.23,1699.0,9.32,Routine Promotion,Customer 8
+2023-06-11,4K Monitor,Electronics,12,8135.94,749.0,9.48,Routine Promotion,Customer 5
+2023-06-11,Smart Speaker,Electronics,28,8053.25,320.0,10.12,Routine Promotion,Customer 8
+2023-06-11,Tablet Pro,Electronics,13,7998.43,680.0,9.52,Routine Promotion,Customer 5
+2023-06-11,Executive Desk,Furniture,8,14857.008,1280.0,9.32,Routine Promotion,Customer 9
+2023-06-11,Standing Lamp,Furniture,34,12678.688000000002,260.0,10.36,Routine Promotion,Customer 8
+2023-06-11,USB-C Hub,Accessories,132,7694.23,68.0,14.28,Routine Promotion,Customer 4
+2023-06-11,Noise Cancelling Headset,Electronics,21,7762.78,410.0,9.84,Routine Promotion,Customer 7
+2023-07-12,Laptop Pro 14,Electronics,8,13017.66,1834.92,11.32,Routine Promotion,Customer 9
+2023-07-12,4K Monitor,Electronics,14,10015.72,808.92,11.56,Routine Promotion,Customer 6
+2023-07-12,Smart Speaker,Electronics,34,10298.05,345.6,12.36,Routine Promotion,Customer 9
+2023-07-12,Tablet Pro,Electronics,16,10382.65,734.4,11.64,Routine Promotion,Customer 6
+2023-07-12,Executive Desk,Furniture,8,15691.68,1382.4,11.32,Routine Promotion,Customer 10
+2023-07-12,Standing Lamp,Furniture,42,16477.072,280.8,12.68,Routine Promotion,Customer 9
+2023-07-12,USB-C Hub,Accessories,163,9873.45,73.44,17.52,Routine Promotion,Customer 5
+2023-07-12,Noise Cancelling Headset,Electronics,27,10511.36,442.8,12.08,Routine Promotion,Customer 8
+2023-08-13,Laptop Pro 14,Electronics,8,14927.93,1970.84,5.32,Routine Promotion,Customer 10
+2023-08-13,4K Monitor,Electronics,18,14744.56,868.84,5.72,Routine Promotion,Customer 7
+2023-08-13,Smart Speaker,Electronics,42,14548.96,371.2,6.68,Routine Promotion,Customer 10
+2023-08-13,Tablet Pro,Electronics,19,14123.94,788.8,5.76,Routine Promotion,Customer 7
+2023-08-13,Executive Desk,Furniture,10,22473.936,1484.8,5.4,Routine Promotion,Customer 11
+2023-08-13,Standing Lamp,Furniture,52,23316.528000000002,301.6,7.08,Routine Promotion,Customer 10
+2023-08-13,USB-C Hub,Accessories,198,13600.36,78.88,12.92,Routine Promotion,Customer 6
+2023-08-13,Noise Cancelling Headset,Electronics,32,14263.43,475.6,6.28,Routine Promotion,Customer 9
+2023-09-14,Laptop Pro 14,Electronics,9,14165.58,1699.0,7.36,Routine Promotion,Customer 11
+2023-09-14,4K Monitor,Electronics,21,14495.85,749.0,7.84,Routine Promotion,Customer 8
+2023-09-14,Smart Speaker,Electronics,50,14560.0,320.0,9.0,Routine Promotion,Customer 11
+2023-09-14,Tablet Pro,Electronics,23,14401.31,680.0,7.92,Routine Promotion,Customer 8
+2023-09-14,Executive Desk,Furniture,12,22737.712,1280.0,7.48,Routine Promotion,Customer 12
+2023-09-14,Standing Lamp,Furniture,62,23346.912,260.0,9.48,Routine Promotion,Customer 11
+2023-09-14,USB-C Hub,Accessories,238,13510.4,68.0,16.52,Routine Promotion,Customer 7
+2023-09-14,Noise Cancelling Headset,Electronics,39,14621.26,410.0,8.56,Routine Promotion,Customer 10
+2023-10-15,Laptop Pro 14,Electronics,8,13311.24,1834.92,9.32,Routine Promotion,Customer 12
+2023-10-15,4K Monitor,Electronics,16,11695.04,808.92,9.64,Routine Promotion,Customer 9
+2023-10-15,Smart Speaker,Electronics,38,11751.23,345.6,10.52,Routine Promotion,Customer 12
+2023-10-15,Tablet Pro,Electronics,18,11934.29,734.4,9.72,Routine Promotion,Customer 9
+2023-10-15,Executive Desk,Furniture,9,18043.312,1382.4,9.36,Routine Promotion,Customer 1
+2023-10-15,Standing Lamp,Furniture,47,18818.72,280.8,10.88,Routine Promotion,Customer 12
+2023-10-15,USB-C Hub,Accessories,180,11077.69,73.44,16.2,Routine Promotion,Customer 8
+2023-10-15,Noise Cancelling Headset,Electronics,29,11536.53,442.8,10.16,Routine Promotion,Customer 11
+2023-11-16,Laptop Pro 14,Electronics,8,13981.93,1970.84,11.32,Holiday Campaign,Customer 1
+2023-11-16,4K Monitor,Electronics,19,14566.62,868.84,11.76,Holiday Campaign,Customer 10
+2023-11-16,Smart Speaker,Electronics,46,14882.74,371.2,12.84,Holiday Campaign,Customer 1
+2023-11-16,Tablet Pro,Electronics,21,14603.53,788.8,11.84,Holiday Campaign,Customer 10
+2023-11-16,Executive Desk,Furniture,11,23142.928,1484.8,11.44,Holiday Campaign,Customer 2
+2023-11-16,Standing Lamp,Furniture,57,23853.136,301.6,13.28,Holiday Campaign,Customer 1
+2023-11-16,USB-C Hub,Accessories,219,14165.27,78.88,18,Holiday Campaign,Customer 9
+2023-11-16,Noise Cancelling Headset,Electronics,36,14991.67,475.6,12.44,Holiday Campaign,Customer 12
+2023-12-17,Laptop Pro 14,Electronics,8,12868.91,1699.0,5.32,Holiday Campaign,Customer 2
+2023-12-17,4K Monitor,Electronics,16,11308.1,749.0,5.64,Holiday Campaign,Customer 11
+2023-12-17,Smart Speaker,Electronics,37,11072.77,320.0,6.48,Holiday Campaign,Customer 2
+2023-12-17,Tablet Pro,Electronics,17,10903.39,680.0,5.68,Holiday Campaign,Customer 11
+2023-12-17,Executive Desk,Furniture,9,17444.048000000003,1280.0,5.36,Holiday Campaign,Customer 3
+2023-12-17,Standing Lamp,Furniture,46,17827.104000000003,260.0,6.84,Holiday Campaign,Customer 2
+2023-12-17,USB-C Hub,Accessories,178,10637.0,68.0,12.12,Holiday Campaign,Customer 10
+2023-12-17,Noise Cancelling Headset,Electronics,29,11157.58,410.0,6.16,Holiday Campaign,Customer 1
+2024-01-18,Laptop Pro 14,Electronics,8,13604.83,1834.92,7.32,Routine Promotion,Customer 3
+2024-01-18,4K Monitor,Electronics,19,14176.81,808.92,7.76,Routine Promotion,Customer 12
+2024-01-18,Smart Speaker,Electronics,46,14492.25,345.6,8.84,Routine Promotion,Customer 3
+2024-01-18,Tablet Pro,Electronics,21,14213.28,734.4,7.84,Routine Promotion,Customer 12
+2024-01-18,Executive Desk,Furniture,11,22520.064000000002,1382.4,7.44,Routine Promotion,Customer 4
+2024-01-18,Standing Lamp,Furniture,56,22834.928,280.8,9.24,Routine Promotion,Customer 3
+2024-01-18,USB-C Hub,Accessories,216,13382.06,73.44,15.64,Routine Promotion,Customer 11
+2024-01-18,Noise Cancelling Headset,Electronics,35,14196.17,442.8,8.4,Routine Promotion,Customer 2
+2024-02-19,Laptop Pro 14,Electronics,10,17855.81,1970.84,9.4,Routine Promotion,Customer 4
+2024-02-19,4K Monitor,Electronics,23,18000.97,868.84,9.92,Routine Promotion,Customer 1
+2024-02-19,Smart Speaker,Electronics,55,18129.41,371.2,11.2,Routine Promotion,Customer 4
+2024-02-19,Tablet Pro,Electronics,26,18449.72,788.8,10.04,Routine Promotion,Customer 1
+2024-02-19,Executive Desk,Furniture,13,27943.696000000004,1484.8,9.52,Routine Promotion,Customer 5
+2024-02-19,Standing Lamp,Furniture,68,28968.271999999997,301.6,11.72,Routine Promotion,Customer 4
+2024-02-19,USB-C Hub,Accessories,260,16817.22,78.88,18,Routine Promotion,Customer 12
+2024-02-19,Noise Cancelling Headset,Electronics,43,18258.47,475.6,10.72,Routine Promotion,Customer 3
+2024-03-20,Laptop Pro 14,Electronics,8,12053.39,1699.0,11.32,Spring Sale,Customer 5
+2024-03-20,4K Monitor,Electronics,17,11245.79,749.0,11.68,Spring Sale,Customer 2
+2024-03-20,Smart Speaker,Electronics,41,11461.63,320.0,12.64,Spring Sale,Customer 5
+2024-03-20,Tablet Pro,Electronics,19,11400.61,680.0,11.76,Spring Sale,Customer 2
+2024-03-20,Executive Desk,Furniture,10,18145.28,1280.0,11.4,Spring Sale,Customer 6
+2024-03-20,Standing Lamp,Furniture,51,18449.44,260.0,13.04,Spring Sale,Customer 5
+2024-03-20,USB-C Hub,Accessories,196,10928.96,68.0,18,Spring Sale,Customer 1
+2024-03-20,Noise Cancelling Headset,Electronics,32,11508.86,410.0,12.28,Spring Sale,Customer 4
+2024-04-21,Laptop Pro 14,Electronics,9,15629.11,1834.92,5.36,Spring Sale,Customer 6
+2024-04-21,4K Monitor,Electronics,21,15995.26,808.92,5.84,Spring Sale,Customer 3
+2024-04-21,Smart Speaker,Electronics,50,16070.4,345.6,7.0,Spring Sale,Customer 6
+2024-04-21,Tablet Pro,Electronics,23,15891.24,734.4,5.92,Spring Sale,Customer 3
+2024-04-21,Executive Desk,Furniture,12,25087.568,1382.4,5.48,Spring Sale,Customer 7
+2024-04-21,Standing Lamp,Furniture,62,25771.776,280.8,7.48,Spring Sale,Customer 6
+2024-04-21,USB-C Hub,Accessories,239,14996.57,73.44,14.56,Spring Sale,Customer 2
+2024-04-21,Noise Cancelling Headset,Electronics,39,16136.34,442.8,6.56,Spring Sale,Customer 5
+2024-05-22,Laptop Pro 14,Electronics,11,20066.3,1970.84,7.44,Spring Sale,Customer 7
+2024-05-22,4K Monitor,Electronics,26,20773.62,868.84,8.04,Spring Sale,Customer 4
+2024-05-22,Smart Speaker,Electronics,61,20505.68,371.2,9.44,Spring Sale,Customer 7
+2024-05-22,Tablet Pro,Electronics,28,20292.98,788.8,8.12,Spring Sale,Customer 4
+2024-05-22,Executive Desk,Furniture,15,32926.92800000001,1484.8,7.6,Spring Sale,Customer 8
+2024-05-22,Standing Lamp,Furniture,75,32572.800000000003,301.6,10.0,Spring Sale,Customer 7
+2024-05-22,USB-C Hub,Accessories,287,18563.62,78.88,18,Spring Sale,Customer 3
+2024-05-22,Noise Cancelling Headset,Electronics,47,20368.24,475.6,8.88,Spring Sale,Customer 6
+2024-06-05,Laptop Pro 14,Electronics,9,13859.76,1699.0,9.36,Routine Promotion,Customer 8
+2024-06-05,4K Monitor,Electronics,20,13511.96,749.0,9.8,Routine Promotion,Customer 5
+2024-06-05,Smart Speaker,Electronics,48,13682.69,320.0,10.92,Routine Promotion,Customer 8
+2024-06-05,Tablet Pro,Electronics,23,14088.51,680.0,9.92,Routine Promotion,Customer 5
+2024-06-05,Executive Desk,Furniture,12,22246.192000000003,1280.0,9.48,Routine Promotion,Customer 9
+2024-06-05,Standing Lamp,Furniture,60,22114.56,260.0,11.4,Routine Promotion,Customer 8
+2024-06-05,USB-C Hub,Accessories,230,12824.8,68.0,18,Routine Promotion,Customer 4
+2024-06-05,Noise Cancelling Headset,Electronics,38,13940.98,410.0,10.52,Routine Promotion,Customer 7
+2024-07-06,Laptop Pro 14,Electronics,11,17875.06,1834.92,11.44,Routine Promotion,Customer 9
+2024-07-06,4K Monitor,Electronics,25,17796.24,808.92,12.0,Routine Promotion,Customer 6
+2024-07-06,Smart Speaker,Electronics,58,17374.83,345.6,13.32,Routine Promotion,Customer 9
+2024-07-06,Tablet Pro,Electronics,27,17433.48,734.4,12.08,Routine Promotion,Customer 6
+2024-07-06,Executive Desk,Furniture,14,27386.112,1382.4,11.56,Routine Promotion,Customer 10
+2024-07-06,Standing Lamp,Furniture,72,27858.240000000005,280.8,13.88,Routine Promotion,Customer 9
+2024-07-06,USB-C Hub,Accessories,276,16620.94,73.44,18,Routine Promotion,Customer 5
+2024-07-06,Noise Cancelling Headset,Electronics,45,17375.47,442.8,12.8,Routine Promotion,Customer 8
+2024-08-07,Laptop Pro 14,Electronics,8,14927.93,1970.84,5.32,Routine Promotion,Customer 10
+2024-08-07,4K Monitor,Electronics,18,14744.56,868.84,5.72,Routine Promotion,Customer 7
+2024-08-07,Smart Speaker,Electronics,44,15228.7,371.2,6.76,Routine Promotion,Customer 10
+2024-08-07,Tablet Pro,Electronics,20,14860.99,788.8,5.8,Routine Promotion,Customer 7
+2024-08-07,Executive Desk,Furniture,11,24710.88,1484.8,5.44,Routine Promotion,Customer 11
+2024-08-07,Standing Lamp,Furniture,54,24192.464000000004,301.6,7.16,Routine Promotion,Customer 10
+2024-08-07,USB-C Hub,Accessories,208,14221.62,78.88,13.32,Routine Promotion,Customer 6
+2024-08-07,Noise Cancelling Headset,Electronics,34,15141.96,475.6,6.36,Routine Promotion,Customer 9
+2024-09-08,Laptop Pro 14,Electronics,10,15732.74,1699.0,7.4,Routine Promotion,Customer 11
+2024-09-08,4K Monitor,Electronics,23,15862.62,749.0,7.92,Routine Promotion,Customer 8
+2024-09-08,Smart Speaker,Electronics,54,15697.15,320.0,9.16,Routine Promotion,Customer 11
+2024-09-08,Tablet Pro,Electronics,25,15640.0,680.0,8.0,Routine Promotion,Customer 8
+2024-09-08,Executive Desk,Furniture,13,24621.872000000003,1280.0,7.52,Routine Promotion,Customer 12
+2024-09-08,Standing Lamp,Furniture,66,24809.248000000003,260.0,9.64,Routine Promotion,Customer 11
+2024-09-08,USB-C Hub,Accessories,254,14308.12,68.0,17.16,Routine Promotion,Customer 7
+2024-09-08,Noise Cancelling Headset,Electronics,42,15725.3,410.0,8.68,Routine Promotion,Customer 10
+2024-10-09,Laptop Pro 14,Electronics,12,19931.64,1834.92,9.48,Routine Promotion,Customer 12
+2024-10-09,4K Monitor,Electronics,27,19639.28,808.92,10.08,Routine Promotion,Customer 9
+2024-10-09,Smart Speaker,Electronics,65,19858.18,345.6,11.6,Routine Promotion,Customer 12
+2024-10-09,Tablet Pro,Electronics,30,19784.74,734.4,10.2,Routine Promotion,Customer 9
+2024-10-09,Executive Desk,Furniture,16,31977.904,1382.4,9.64,Routine Promotion,Customer 1
+2024-10-09,Standing Lamp,Furniture,80,31557.424,280.8,12.2,Routine Promotion,Customer 12
+2024-10-09,USB-C Hub,Accessories,306,18427.56,73.44,18,Routine Promotion,Customer 8
+2024-10-09,Noise Cancelling Headset,Electronics,50,19704.6,442.8,11.0,Routine Promotion,Customer 11
+2024-11-10,Laptop Pro 14,Electronics,14,24402.15,1970.84,11.56,Holiday Campaign,Customer 1
+2024-11-10,4K Monitor,Electronics,32,24388.69,868.84,12.28,Holiday Campaign,Customer 10
+2024-11-10,Smart Speaker,Electronics,77,24558.0,371.2,14.08,Holiday Campaign,Customer 1
+2024-11-10,Tablet Pro,Electronics,36,24864.24,788.8,12.44,Holiday Campaign,Customer 10
+2024-11-10,Executive Desk,Furniture,19,39829.696,1484.8,11.76,Holiday Campaign,Customer 2
+2024-11-10,Standing Lamp,Furniture,95,39058.4,301.6,14.8,Holiday Campaign,Customer 1
+2024-11-10,USB-C Hub,Accessories,363,23479.42,78.88,18,Holiday Campaign,Customer 9
+2024-11-10,Noise Cancelling Headset,Electronics,60,24712.18,475.6,13.4,Holiday Campaign,Customer 12
+2024-12-11,Laptop Pro 14,Electronics,11,17672.32,1699.0,5.44,Holiday Campaign,Customer 2
+2024-12-11,4K Monitor,Electronics,26,18297.77,749.0,6.04,Holiday Campaign,Customer 11
+2024-12-11,Smart Speaker,Electronics,61,18067.71,320.0,7.44,Holiday Campaign,Customer 2
+2024-12-11,Tablet Pro,Electronics,28,17874.75,680.0,6.12,Holiday Campaign,Customer 11
+2024-12-11,Executive Desk,Furniture,15,28999.68,1280.0,5.6,Holiday Campaign,Customer 3
+2024-12-11,Standing Lamp,Furniture,75,28704.0,260.0,8.0,Holiday Campaign,Customer 2
+2024-12-11,USB-C Hub,Accessories,288,16348.72,68.0,16.52,Holiday Campaign,Customer 10
+2024-12-11,Noise Cancelling Headset,Electronics,47,17944.22,410.0,6.88,Holiday Campaign,Customer 1
+2025-01-12,Laptop Pro 14,Electronics,8,13604.83,1834.92,7.32,Routine Promotion,Customer 3
+2025-01-12,4K Monitor,Electronics,19,14176.81,808.92,7.76,Routine Promotion,Customer 12
+2025-01-12,Smart Speaker,Electronics,46,14492.25,345.6,8.84,Routine Promotion,Customer 3
+2025-01-12,Tablet Pro,Electronics,21,14213.28,734.4,7.84,Routine Promotion,Customer 12
+2025-01-12,Executive Desk,Furniture,11,22520.064000000002,1382.4,7.44,Routine Promotion,Customer 4
+2025-01-12,Standing Lamp,Furniture,57,23232.448000000004,280.8,9.28,Routine Promotion,Customer 3
+2025-01-12,USB-C Hub,Accessories,218,13493.16,73.44,15.72,Routine Promotion,Customer 11
+2025-01-12,Noise Cancelling Headset,Electronics,36,14595.4,442.8,8.44,Routine Promotion,Customer 2
+2025-02-13,Laptop Pro 14,Electronics,10,17855.81,1970.84,9.4,Routine Promotion,Customer 4
+2025-02-13,4K Monitor,Electronics,24,18775.28,868.84,9.96,Routine Promotion,Customer 1
+2025-02-13,Smart Speaker,Electronics,56,18450.72,371.2,11.24,Routine Promotion,Customer 4
+2025-02-13,Tablet Pro,Electronics,26,18449.72,788.8,10.04,Routine Promotion,Customer 1
+2025-02-13,Executive Desk,Furniture,14,30079.904,1484.8,9.56,Routine Promotion,Customer 5
+2025-02-13,Standing Lamp,Furniture,69,29380.96,301.6,11.76,Routine Promotion,Customer 4
+2025-02-13,USB-C Hub,Accessories,266,17205.31,78.88,18,Routine Promotion,Customer 12
+2025-02-13,Noise Cancelling Headset,Electronics,44,18674.72,475.6,10.76,Routine Promotion,Customer 3
+2025-03-14,Laptop Pro 14,Electronics,12,18047.46,1699.0,11.48,Spring Sale,Customer 5
+2025-03-14,4K Monitor,Electronics,29,19079.73,749.0,12.16,Spring Sale,Customer 2
+2025-03-14,Smart Speaker,Electronics,68,18774.53,320.0,13.72,Spring Sale,Customer 5
+2025-03-14,Tablet Pro,Electronics,32,19087.87,680.0,12.28,Spring Sale,Customer 2
+2025-03-14,Executive Desk,Furniture,17,30749.488,1280.0,11.68,Spring Sale,Customer 6
+2025-03-14,Standing Lamp,Furniture,83,29583.584000000003,260.0,14.32,Spring Sale,Customer 5
+2025-03-14,USB-C Hub,Accessories,321,17898.96,68.0,18,Spring Sale,Customer 1
+2025-03-14,Noise Cancelling Headset,Electronics,53,18879.02,410.0,13.12,Spring Sale,Customer 4
+2025-04-15,Laptop Pro 14,Electronics,15,25982.47,1834.92,5.6,Spring Sale,Customer 6
+2025-04-15,4K Monitor,Electronics,34,25754.07,808.92,6.36,Spring Sale,Customer 3
+2025-04-15,Smart Speaker,Electronics,81,25686.93,345.6,8.24,Spring Sale,Customer 6
+2025-04-15,Tablet Pro,Electronics,38,26087.65,734.4,6.52,Spring Sale,Customer 3
+2025-04-15,Executive Desk,Furniture,20,41671.072,1382.4,5.8,Spring Sale,Customer 7
+2025-04-15,Standing Lamp,Furniture,99,40493.424,280.8,8.96,Spring Sale,Customer 6
+2025-04-15,USB-C Hub,Accessories,381,22944.12,73.44,18,Spring Sale,Customer 2
+2025-04-15,Noise Cancelling Headset,Electronics,63,25798.59,442.8,7.52,Spring Sale,Customer 5
+2025-05-16,Laptop Pro 14,Electronics,17,30931.15,1970.84,7.68,Spring Sale,Customer 7
+2025-05-16,4K Monitor,Electronics,40,31764.79,868.84,8.6,Spring Sale,Customer 4
+2025-05-16,Smart Speaker,Electronics,95,31455.49,371.2,10.8,Spring Sale,Customer 7
+2025-05-16,Tablet Pro,Electronics,44,31666.85,788.8,8.76,Spring Sale,Customer 4
+2025-05-16,Executive Desk,Furniture,23,50313.104,1484.8,7.92,Spring Sale,Customer 8
+2025-05-16,Standing Lamp,Furniture,117,49865.056000000004,301.6,11.68,Spring Sale,Customer 7
+2025-05-16,USB-C Hub,Accessories,447,28912.68,78.88,18,Spring Sale,Customer 3
+2025-05-16,Noise Cancelling Headset,Electronics,74,31689.04,475.6,9.96,Spring Sale,Customer 6
+2025-06-17,Laptop Pro 14,Electronics,8,12325.23,1699.0,9.32,Routine Promotion,Customer 8
+2025-06-17,4K Monitor,Electronics,20,13511.96,749.0,9.8,Routine Promotion,Customer 5
+2025-06-17,Smart Speaker,Electronics,47,13403.65,320.0,10.88,Routine Promotion,Customer 8
+2025-06-17,Tablet Pro,Electronics,22,13481.95,680.0,9.88,Routine Promotion,Customer 5
+2025-06-17,Executive Desk,Furniture,11,20401.36,1280.0,9.44,Routine Promotion,Customer 9
+2025-06-17,Standing Lamp,Furniture,58,21396.704,260.0,11.32,Routine Promotion,Customer 8
+2025-06-17,USB-C Hub,Accessories,223,12446.61,68.0,17.92,Routine Promotion,Customer 4
+2025-06-17,Noise Cancelling Headset,Electronics,37,13580.18,410.0,10.48,Routine Promotion,Customer 7
+2025-07-18,Laptop Pro 14,Electronics,10,16257.39,1834.92,11.4,Routine Promotion,Customer 9
+2025-07-18,4K Monitor,Electronics,24,17092.16,808.92,11.96,Routine Promotion,Customer 6
+2025-07-18,Smart Speaker,Electronics,58,17374.83,345.6,13.32,Routine Promotion,Customer 9
+2025-07-18,Tablet Pro,Electronics,27,17433.48,734.4,12.08,Routine Promotion,Customer 6
+2025-07-18,Executive Desk,Furniture,14,27386.112,1382.4,11.56,Routine Promotion,Customer 10
+2025-07-18,Standing Lamp,Furniture,71,27484.08,280.8,13.84,Routine Promotion,Customer 9
+2025-07-18,USB-C Hub,Accessories,274,16500.5,73.44,18,Routine Promotion,Customer 5
+2025-07-18,Noise Cancelling Headset,Electronics,45,17375.47,442.8,12.8,Routine Promotion,Customer 8
+2025-08-19,Laptop Pro 14,Electronics,13,24206.65,1970.84,5.52,Routine Promotion,Customer 10
+2025-08-19,4K Monitor,Electronics,30,24449.16,868.84,6.2,Routine Promotion,Customer 7
+2025-08-19,Smart Speaker,Electronics,70,23957.25,371.2,7.8,Routine Promotion,Customer 10
+2025-08-19,Tablet Pro,Electronics,33,24385.28,788.8,6.32,Routine Promotion,Customer 7
+2025-08-19,Executive Desk,Furniture,17,38092.608,1484.8,5.68,Routine Promotion,Customer 11
+2025-08-19,Standing Lamp,Furniture,86,37997.552,301.6,8.44,Routine Promotion,Customer 10
+2025-08-19,USB-C Hub,Accessories,331,21409.61,78.88,18,Routine Promotion,Customer 6
+2025-08-19,Noise Cancelling Headset,Electronics,54,23843.54,475.6,7.16,Routine Promotion,Customer 9
+2025-09-20,Laptop Pro 14,Electronics,15,23548.14,1699.0,7.6,Routine Promotion,Customer 11
+2025-09-20,4K Monitor,Electronics,35,24012.94,749.0,8.4,Routine Promotion,Customer 8
+2025-09-20,Smart Speaker,Electronics,83,23819.01,320.0,10.32,Routine Promotion,Customer 11
+2025-09-20,Tablet Pro,Electronics,39,24249.89,680.0,8.56,Routine Promotion,Customer 8
+2025-09-20,Executive Desk,Furniture,20,37765.12,1280.0,7.8,Routine Promotion,Customer 12
+2025-09-20,Standing Lamp,Furniture,103,38083.296,260.0,11.12,Routine Promotion,Customer 11
+2025-09-20,USB-C Hub,Accessories,394,21969.44,68.0,18,Routine Promotion,Customer 7
+2025-09-20,Noise Cancelling Headset,Electronics,65,24091.6,410.0,9.6,Routine Promotion,Customer 10
+2025-10-21,Laptop Pro 14,Electronics,18,29818.18,1834.92,9.72,Routine Promotion,Customer 12
+2025-10-21,4K Monitor,Electronics,42,30346.15,808.92,10.68,Routine Promotion,Customer 9
+2025-10-21,Smart Speaker,Electronics,98,29492.95,345.6,12.92,Routine Promotion,Customer 12
+2025-10-21,Tablet Pro,Electronics,46,30120.39,734.4,10.84,Routine Promotion,Customer 9
+2025-10-21,Executive Desk,Furniture,24,47796.976,1382.4,9.96,Routine Promotion,Customer 1
+2025-10-21,Standing Lamp,Furniture,121,46839.056000000004,280.8,13.84,Routine Promotion,Customer 12
+2025-10-21,USB-C Hub,Accessories,464,27942.45,73.44,18,Routine Promotion,Customer 8
+2025-10-21,Noise Cancelling Headset,Electronics,77,29976.85,442.8,12.08,Routine Promotion,Customer 11
+2025-11-22,Laptop Pro 14,Electronics,13,22669.39,1970.84,11.52,Holiday Campaign,Customer 1
+2025-11-22,4K Monitor,Electronics,31,23637.31,868.84,12.24,Holiday Campaign,Customer 10
+2025-11-22,Smart Speaker,Electronics,73,23325.61,371.2,13.92,Holiday Campaign,Customer 1
+2025-11-22,Tablet Pro,Electronics,34,23504.35,788.8,12.36,Holiday Campaign,Customer 10
+2025-11-22,Executive Desk,Furniture,18,37750.512,1484.8,11.72,Holiday Campaign,Customer 2
+2025-11-22,Standing Lamp,Furniture,89,36694.64000000001,301.6,14.56,Holiday Campaign,Customer 1
+2025-11-22,USB-C Hub,Accessories,344,22250.47,78.88,18,Holiday Campaign,Customer 9
+2025-11-22,Noise Cancelling Headset,Electronics,57,23509.1,475.6,13.28,Holiday Campaign,Customer 12
+2025-12-05,Laptop Pro 14,Electronics,11,17672.32,1699.0,5.44,Holiday Campaign,Customer 2
+2025-12-05,4K Monitor,Electronics,25,17601.5,749.0,6.0,Holiday Campaign,Customer 11
+2025-12-05,Smart Speaker,Electronics,59,17490.43,320.0,7.36,Holiday Campaign,Customer 2
+2025-12-05,Tablet Pro,Electronics,27,17243.71,680.0,6.08,Holiday Campaign,Customer 11
+2025-12-05,Executive Desk,Furniture,14,27077.840000000004,1280.0,5.56,Holiday Campaign,Customer 3
+2025-12-05,Standing Lamp,Furniture,72,27591.776,260.0,7.88,Holiday Campaign,Customer 2
+2025-12-05,USB-C Hub,Accessories,278,15856.68,68.0,16.12,Holiday Campaign,Customer 10
+2025-12-05,Noise Cancelling Headset,Electronics,46,17569.98,410.0,6.84,Holiday Campaign,Customer 1
