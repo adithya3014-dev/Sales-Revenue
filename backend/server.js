@@ -63,7 +63,9 @@ const allowedOrigins = new Set([
 app.use(cors({
   credentials: true,
   origin(origin, callback) {
-    if (!origin || allowedOrigins.has(origin)) return callback(null, true);
+    if (!origin || allowedOrigins.has(origin) || origin.endsWith('.github.io') || origin.endsWith('.trycloudflare.com') || origin.includes('localhost') || origin.includes('127.0.0.1')) {
+      return callback(null, true);
+    }
     return callback(new Error('Origin is not allowed by the REVORA API.'));
   }
 }));
@@ -844,7 +846,7 @@ function runPredictionScript(horizon = 3) {
   return JSON.parse(result.stdout);
 }
 
-app.get('/api/health', (_req, res) => {
+app.get(['/health', '/api/health'], (_req, res) => {
   res.json({ status: 'ok', message: 'REVORA Intelligence API is running.' });
 });
 

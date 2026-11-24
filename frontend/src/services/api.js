@@ -11,11 +11,53 @@ import {
 
 const DEFAULT_API_URL = 'https://bay-laid-analyst-technology.trycloudflare.com/api';
 
+function resolveApiBaseUrl() {
+  if (typeof window !== 'undefined') {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const apiParam = params.get('api');
+      if (apiParam) {
+        let clean = apiParam.trim().replace(/\/+$/, '');
+        if (!clean.endsWith('/api')) clean += '/api';
+        localStorage.setItem('revora_api_url', clean);
+        params.delete('api');
+        const newSearch = params.toString();
+        const newUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '') + window.location.hash;
+        window.history.replaceState({}, document.title, newUrl);
+        return clean;
+      }
+    } catch {
+      // ignore in environments without window / location
+    }
+
+    // When running locally on localhost or 127.0.0.1, directly use the local Express backend
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      return 'http://localhost:5000/api';
+    }
+
+    const saved = localStorage.getItem('revora_api_url');
+    if (saved) return saved;
+  }
+  return import.meta.env.VITE_API_URL || DEFAULT_API_URL;
+}
+
 const api = axios.create({
-  baseURL: localStorage.getItem('revora_api_url') || import.meta.env.VITE_API_URL || DEFAULT_API_URL,
+  baseURL: resolveApiBaseUrl(),
   withCredentials: true,
   timeout: 8000
 });
+
+export const getApiUrl = () => api.defaults.baseURL || resolveApiBaseUrl();
+
+export const setApiUrl = (url) => {
+  let clean = (url || '').trim().replace(/\/+$/, '');
+  if (clean && !clean.endsWith('/api')) clean += '/api';
+  if (clean) {
+    localStorage.setItem('revora_api_url', clean);
+    api.defaults.baseURL = clean;
+  }
+  return clean;
+};
 
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('sales_auth_token') || sessionStorage.getItem('sales_auth_token');
