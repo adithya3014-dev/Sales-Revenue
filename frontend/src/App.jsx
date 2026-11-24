@@ -71,7 +71,9 @@ import {
   updateProfile,
   updateUserRole,
   submitPrediction,
-  uploadCsv
+  uploadCsv,
+  getApiUrl,
+  setApiUrl
 } from './services/api';
 import CATEGORY_TAXONOMY from './data/categoryTaxonomy';
 import HelpChat from './components/HelpChat';
@@ -236,6 +238,126 @@ function App() {
   const [csvText, setCsvText] = useState('');
   const [csvProcessing, setCsvProcessing] = useState(false);
   const [csvStatus, setCsvStatus] = useState('');
+  const [showApiModal, setShowApiModal] = useState(false);
+  const [apiModalInput, setApiModalInput] = useState(() => getApiUrl());
+  const [apiModalStatus, setApiModalStatus] = useState('');
+  const [isBackendOnline, setIsBackendOnline] = useState(null);
+
+  const checkBackendConnection = async (targetUrl) => {
+    const checkUrl = (targetUrl || getApiUrl()).replace(/\/+$/, '');
+    const healthUrl = checkUrl.endsWith('/api') ? `${checkUrl}/health` : `${checkUrl}/api/health`;
+    try {
+      const res = await fetch(healthUrl, { method: 'GET', headers: { 'Bypass-Tunnel-Reminder': 'true' } });
+      if (res.ok) {
+        setIsBackendOnline(true);
+        return true;
+      }
+    } catch {
+      // offline
+    }
+    setIsBackendOnline(false);
+    return false;
+  };
+
+  useEffect(() => {
+    checkBackendConnection();
+  }, []);
+
+  const handleSaveApiUrl = async () => {
+    let clean = (apiModalInput || '').trim().replace(/\/+$/, '');
+    if (clean && !clean.endsWith('/api')) clean += '/api';
+    setApiUrl(clean);
+    setApiModalStatus('Testing connection...');
+    const ok = await checkBackendConnection(clean);
+    if (ok) {
+      setApiModalStatus('Connected successfully! Reloading...');
+      setTimeout(() => {
+        window.location.reload();
+      }, 700);
+    } else {
+      setApiModalStatus('Saved, but backend appears offline. Ensure the backend/tunnel is running.');
+    }
+  };
+
+  const renderApiModal = () => {
+    if (!showApiModal) return null;
+    return (
+      <div style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'rgba(0,0,0,0.55)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        zIndex: 999999,
+        padding: '1rem'
+      }}>
+        <div style={{
+          background: 'var(--card-bg, #ffffff)',
+          color: 'var(--text-primary, #1e293b)',
+          borderRadius: '12px',
+          maxWidth: '520px',
+          width: '100%',
+          padding: '1.5rem',
+          boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.25)'
+        }}>
+          <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            🔌 Backend & Database Connection
+          </h3>
+          <p style={{ fontSize: '0.88rem', color: '#64748b', margin: '0 0 1rem 0', lineHeight: 1.4 }}>
+            Configure the API endpoint connected to your local MySQL Workbench database.
+          </p>
+          <label style={{ display: 'block', marginBottom: '1rem' }}>
+            <span style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>Backend API URL</span>
+            <input
+              type="text"
+              value={apiModalInput}
+              onChange={(e) => setApiModalInput(e.target.value)}
+              placeholder="https://your-tunnel.trycloudflare.com/api or http://localhost:5000/api"
+              style={{
+                width: '100%',
+                padding: '0.6rem 0.8rem',
+                borderRadius: '6px',
+                border: '1px solid #cbd5e1',
+                fontSize: '0.9rem'
+              }}
+            />
+          </label>
+          {apiModalStatus && (
+            <p style={{
+              fontSize: '0.85rem',
+              margin: '0 0 1rem 0',
+              padding: '0.5rem 0.75rem',
+              borderRadius: '6px',
+              background: apiModalStatus.includes('Connected') ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.1)',
+              color: apiModalStatus.includes('Connected') ? '#059669' : '#dc2626'
+            }}>
+              {apiModalStatus}
+            </p>
+          )}
+          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.5rem' }}>
+            <button
+              type="button"
+              className="secondary-btn"
+              onClick={() => setShowApiModal(false)}
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              className="primary-btn"
+              onClick={handleSaveApiUrl}
+            >
+              Save & Connect
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  };
   const browsableProducts = useMemo(() => {
     const catalogProducts = CATEGORY_TAXONOMY.flatMap((category) => (
       category.subcategories.flatMap((subcategory) => subcategory.items.map((productName) => ({
@@ -1506,7 +1628,23 @@ function App() {
                   <button type="button" className="primary-btn" onClick={handleProcessCsv} disabled={csvProcessing || !csvText.trim()}>
                     {csvProcessing ? 'Processing CSV...' : 'Process CSV'}
                   </button>
-                  {csvStatus && <p className="csv-status" role="status">{csvStatus}</p>}
+                  {csvStatus && (
+                    <div style={{ marginTop: '0.6rem' }}>
+                      <p className="csv-status" role="status" style={{ color: csvStatus.toLowerCase().includes('success') || csvStatus.toLowerCase().includes('imported') ? '#10b981' : '#ef4444', fontWeight: 500 }}>
+                        {csvStatus}
+                      </p>
+                      {(csvStatus.toLowerCase().includes('backend') || csvStatus.toLowerCase().includes('network') || csvStatus.toLowerCase().includes('offline')) && (
+                        <button
+                          type="button"
+                          className="secondary-btn"
+                          style={{ marginTop: '0.5rem', fontSize: '0.82rem', padding: '0.35rem 0.75rem', borderColor: '#38bdf8', color: '#0284c7' }}
+                          onClick={() => { setShowApiModal(true); setApiModalInput(getApiUrl()); setApiModalStatus(''); }}
+                        >
+                          ⚙️ Configure Backend API URL
+                        </button>
+                      )}
+                    </div>
+                  )}
                 </div>
               </SectionCard>
 
@@ -1936,9 +2074,20 @@ function App() {
               <p className="auth-footer">
                 New here? <button type="button" className="text-link-button" onClick={() => { setAuthMode('register'); setAuthView('default'); setAuthMessage({ type: '', text: '' }); }}>Create an account</button>
               </p>
+              <div style={{ textAlign: 'center', marginTop: '1rem', borderTop: '1px solid #e2e8f0', paddingTop: '0.75rem' }}>
+                <button
+                  type="button"
+                  className="text-link-button"
+                  style={{ fontSize: '0.8rem', color: '#64748b' }}
+                  onClick={() => { setShowApiModal(true); setApiModalInput(getApiUrl()); setApiModalStatus(''); }}
+                >
+                  ⚙️ Backend Database Connection Settings
+                </button>
+              </div>
             </form>
           )}
         </div>
+        {renderApiModal()}
         <HelpChat />
       </div>
     );
@@ -1985,6 +2134,28 @@ function App() {
           </div>
 
           <div className="topbar-actions">
+            <button
+              type="button"
+              className="secondary-btn"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                fontSize: '0.78rem',
+                padding: '0.35rem 0.65rem',
+                borderRadius: '6px',
+                border: isBackendOnline ? '1px solid #10b981' : '1px solid #f59e0b',
+                background: isBackendOnline ? 'rgba(16, 185, 129, 0.1)' : 'rgba(245, 158, 11, 0.1)',
+                color: isBackendOnline ? '#059669' : '#d97706',
+                cursor: 'pointer',
+                fontWeight: 600
+              }}
+              onClick={() => { setShowApiModal(true); setApiModalInput(getApiUrl()); setApiModalStatus(''); }}
+              title="Click to view or change backend database connection URL"
+            >
+              <span style={{ width: 8, height: 8, borderRadius: '50%', background: isBackendOnline ? '#10b981' : '#f59e0b', display: 'inline-block' }} />
+              <span>{isBackendOnline ? 'Database Live' : 'Backend URL'}</span>
+            </button>
             <div className="notification-wrap">
               <button
                 type="button"
@@ -2108,6 +2279,7 @@ function App() {
           {renderPage()}
         </div>
       </main>
+      {renderApiModal()}
       <HelpChat onNavigate={setActivePage} />
     </div>
   );

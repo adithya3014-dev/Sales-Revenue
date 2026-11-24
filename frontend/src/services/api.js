@@ -44,7 +44,7 @@ function resolveApiBaseUrl() {
 const api = axios.create({
   baseURL: resolveApiBaseUrl(),
   withCredentials: true,
-  timeout: 8000
+  timeout: 45000
 });
 
 export const getApiUrl = () => api.defaults.baseURL || resolveApiBaseUrl();
@@ -319,8 +319,18 @@ export const submitPrediction = async (payload) => {
 };
 
 export const uploadCsv = async (csvData) => {
-  const response = await api.post('/data/upload', { csv: csvData });
-  return response.data;
+  try {
+    const response = await api.post('/data/upload', { csv: csvData });
+    return response.data;
+  } catch (err) {
+    if (err.response?.data?.message) {
+      throw new Error(err.response.data.message);
+    }
+    if (!err.response) {
+      throw new Error('Backend server is offline or unreachable. Please ensure the backend and tunnel are running and your API URL is configured.');
+    }
+    throw err;
+  }
 };
 
 export default api;

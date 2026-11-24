@@ -1,0 +1,151 @@
+Order_ID,Order_Date,Customer_ID,Customer_Name,Product,Category,Quantity,Unit_Price,Unit_Cost,Discount_Percent,Revenue,Cost,Profit,Region,City,Payment_Method
+ORD0145,2025-01-02,CUST004,Sneha Patel,Webcam HD,Electronics,1,54.99,27.5,0.0,54.99,27.5,27.49,Central,Bhopal,Card
+ORD0019,2025-01-04,CUST001,Aarav Sharma,Webcam HD,Electronics,4,54.99,27.5,5.0,208.96,110.0,98.96,South,Hyderabad,UPI
+ORD0131,2025-01-19,CUST012,Pooja Menon,Office Chair,Furniture,3,179.0,112.0,0.0,537.0,336.0,201.0,Central,Indore,Cash
+ORD0111,2025-01-21,CUST009,Kiran Verma,External SSD 1TB,Storage,3,109.0,67.0,0.0,327.0,201.0,126.0,East,Kolkata,Net Banking
+ORD0062,2025-01-29,CUST012,Pooja Menon,Mechanical Keyboard,Accessories,3,69.99,34.5,0.0,209.97,103.5,106.47,South,Chennai,Net Banking
+ORD0075,2025-01-31,CUST003,Rahul Kumar,Laptop Stand,Accessories,1,29.5,12.75,0.0,29.5,12.75,16.75,Central,Bhopal,Card
+ORD0045,2025-02-10,CUST004,Sneha Patel,Webcam HD,Electronics,4,54.99,27.5,0.0,219.96,110.0,109.96,East,Guwahati,Card
+ORD0118,2025-02-11,CUST011,Rohan Joshi,Desk Lamp,Furniture,2,32.0,14.5,10.0,57.6,29.0,28.6,West,Ahmedabad,Card
+ORD0144,2025-02-13,CUST002,Priya Reddy,27-inch Monitor,Electronics,1,229.0,158.0,0.0,229.0,158.0,71.0,West,Ahmedabad,Card
+ORD0103,2025-02-14,CUST002,Priya Reddy,Desk Lamp,Furniture,1,32.0,14.5,5.0,30.4,14.5,15.9,North,Delhi,UPI
+ORD0063,2025-02-18,CUST003,Rahul Kumar,Laptop Stand,Accessories,4,29.5,12.75,0.0,118.0,51.0,67.0,West,Pune,Cash
+ORD0035,2025-02-20,CUST009,Kiran Verma,Mechanical Keyboard,Accessories,2,69.99,34.5,15.0,118.98,69.0,49.98,Central,Indore,Cash
+ORD0007,2025-02-22,CUST002,Priya Reddy,Laptop Stand,Accessories,3,29.5,12.75,0.0,88.5,38.25,50.25,South,Bengaluru,Cash
+ORD0095,2025-03-08,CUST010,Isha Gupta,Mechanical Keyboard,Accessories,2,69.99,34.5,10.0,125.98,69.0,56.98,Central,Nagpur,Card
+ORD0086,2025-03-08,CUST012,Pooja Menon,Desk Lamp,Furniture,2,32.0,14.5,15.0,54.4,29.0,25.4,South,Bengaluru,Net Banking
+ORD0112,2025-03-08,CUST008,Meera Nair,Mechanical Keyboard,Accessories,2,69.99,34.5,0.0,139.98,69.0,70.98,South,Chennai,Cash
+ORD0006,2025-03-18,CUST010,Isha Gupta,27-inch Monitor,Electronics,3,229.0,158.0,15.0,583.95,474.0,109.95,East,Kolkata,UPI
+ORD0042,2025-03-21,CUST006,Ananya Rao,Bluetooth Headphones,Electronics,3,89.99,43.0,0.0,269.97,129.0,140.97,North,Delhi,Cash
+ORD0072,2025-03-21,CUST001,Aarav Sharma,Bluetooth Headphones,Electronics,1,89.99,43.0,10.0,80.99,43.0,37.99,South,Bengaluru,Net Banking
+ORD0024,2025-03-23,CUST006,Ananya Rao,Office Chair,Furniture,1,179.0,112.0,0.0,179.0,112.0,67.0,North,Delhi,Card
+ORD0020,2025-03-24,CUST003,Rahul Kumar,Laptop,Computers,3,899.0,675.0,15.0,2292.45,2025.0,267.45,South,Chennai,Net Banking
+ORD0030,2025-03-30,CUST004,Sneha Patel,Laptop Stand,Accessories,1,29.5,12.75,10.0,26.55,12.75,13.8,West,Pune,UPI
+ORD0001,2025-04-01,CUST012,Pooja Menon,Desk Lamp,Furniture,1,32.0,14.5,0.0,32.0,14.5,17.5,South,Hyderabad,UPI
+ORD0014,2025-04-05,CUST002,Priya Reddy,Office Chair,Furniture,1,179.0,112.0,10.0,161.1,112.0,49.1,Central,Indore,Net Banking
+ORD0028,2025-04-08,CUST007,Vikram Das,Laptop Stand,Accessories,1,29.5,12.75,10.0,26.55,12.75,13.8,South,Hyderabad,Cash
+ORD0046,2025-04-12,CUST012,Pooja Menon,Tablet,Computers,4,349.0,245.0,10.0,1256.4,980.0,276.4,Central,Bhopal,Card
+ORD0081,2025-04-14,CUST007,Vikram Das,Webcam HD,Electronics,2,54.99,27.5,10.0,98.98,55.0,43.98,South,Hyderabad,Cash
+ORD0136,2025-04-15,CUST009,Kiran Verma,Mechanical Keyboard,Accessories,1,69.99,34.5,0.0,69.99,34.5,35.49,West,Pune,UPI
+ORD0052,2025-04-20,CUST010,Isha Gupta,Bluetooth Headphones,Electronics,1,89.99,43.0,5.0,85.49,43.0,42.49,West,Ahmedabad,UPI
+ORD0097,2025-04-25,CUST003,Rahul Kumar,Laptop Stand,Accessories,2,29.5,12.75,5.0,56.05,25.5,30.55,North,Delhi,Card
+ORD0040,2025-04-29,CUST003,Rahul Kumar,USB-C Hub,Accessories,1,39.99,19.0,0.0,39.99,19.0,20.99,Central,Indore,Cash
+ORD0133,2025-04-29,CUST001,Aarav Sharma,Office Chair,Furniture,2,179.0,112.0,5.0,340.1,224.0,116.1,West,Ahmedabad,Cash
+ORD0140,2025-05-02,CUST002,Priya Reddy,Wireless Mouse,Accessories,1,18.99,8.25,10.0,17.09,8.25,8.84,North,Delhi,Card
+ORD0134,2025-05-03,CUST004,Sneha Patel,27-inch Monitor,Electronics,1,229.0,158.0,10.0,206.1,158.0,48.1,South,Hyderabad,Cash
+ORD0067,2025-05-05,CUST002,Priya Reddy,Laptop Stand,Accessories,2,29.5,12.75,0.0,59.0,25.5,33.5,South,Bengaluru,Net Banking
+ORD0032,2025-05-07,CUST012,Pooja Menon,27-inch Monitor,Electronics,1,229.0,158.0,0.0,229.0,158.0,71.0,Central,Nagpur,UPI
+ORD0127,2025-05-08,CUST011,Rohan Joshi,Laptop,Computers,2,899.0,675.0,10.0,1618.2,1350.0,268.2,East,Kolkata,Net Banking
+ORD0018,2025-05-12,CUST010,Isha Gupta,USB-C Hub,Accessories,2,39.99,19.0,15.0,67.98,38.0,29.98,North,Chandigarh,Net Banking
+ORD0116,2025-05-15,CUST009,Kiran Verma,Tablet,Computers,2,349.0,245.0,5.0,663.1,490.0,173.1,Central,Indore,Net Banking
+ORD0044,2025-05-18,CUST003,Rahul Kumar,Wireless Mouse,Accessories,4,18.99,8.25,15.0,64.57,33.0,31.57,Central,Indore,Card
+ORD0147,2025-05-18,CUST003,Rahul Kumar,27-inch Monitor,Electronics,3,229.0,158.0,0.0,687.0,474.0,213.0,North,Delhi,Cash
+ORD0034,2025-06-03,CUST002,Priya Reddy,External SSD 1TB,Storage,1,109.0,67.0,0.0,109.0,67.0,42.0,West,Ahmedabad,Card
+ORD0126,2025-06-06,CUST011,Rohan Joshi,Mechanical Keyboard,Accessories,2,69.99,34.5,10.0,125.98,69.0,56.98,Central,Bhopal,Net Banking
+ORD0031,2025-06-13,CUST005,Arjun Singh,Wireless Mouse,Accessories,5,18.99,8.25,5.0,90.2,41.25,48.95,West,Pune,Net Banking
+ORD0009,2025-06-18,CUST005,Arjun Singh,Desk Lamp,Furniture,1,32.0,14.5,10.0,28.8,14.5,14.3,West,Ahmedabad,Card
+ORD0077,2025-06-20,CUST005,Arjun Singh,External SSD 1TB,Storage,5,109.0,67.0,0.0,545.0,335.0,210.0,South,Hyderabad,UPI
+ORD0043,2025-06-24,CUST001,Aarav Sharma,Laptop,Computers,2,899.0,675.0,10.0,1618.2,1350.0,268.2,Central,Bhopal,UPI
+ORD0101,2025-06-26,CUST008,Meera Nair,27-inch Monitor,Electronics,2,229.0,158.0,15.0,389.3,316.0,73.3,East,Kolkata,Net Banking
+ORD0047,2025-06-26,CUST012,Pooja Menon,USB-C Hub,Accessories,4,39.99,19.0,0.0,159.96,76.0,83.96,South,Bengaluru,Net Banking
+ORD0071,2025-06-27,CUST001,Aarav Sharma,Laptop,Computers,4,899.0,675.0,15.0,3056.6,2700.0,356.6,Central,Indore,UPI
+ORD0090,2025-07-07,CUST010,Isha Gupta,Desk Lamp,Furniture,2,32.0,14.5,15.0,54.4,29.0,25.4,Central,Indore,UPI
+ORD0110,2025-07-09,CUST012,Pooja Menon,Tablet,Computers,1,349.0,245.0,5.0,331.55,245.0,86.55,West,Pune,UPI
+ORD0091,2025-07-10,CUST012,Pooja Menon,Laptop Stand,Accessories,2,29.5,12.75,5.0,56.05,25.5,30.55,North,Jaipur,Card
+ORD0056,2025-07-14,CUST010,Isha Gupta,Office Chair,Furniture,5,179.0,112.0,0.0,895.0,560.0,335.0,Central,Indore,Net Banking
+ORD0100,2025-07-14,CUST003,Rahul Kumar,Mechanical Keyboard,Accessories,2,69.99,34.5,0.0,139.98,69.0,70.98,East,Kolkata,UPI
+ORD0143,2025-07-15,CUST011,Rohan Joshi,Laptop,Computers,5,899.0,675.0,5.0,4270.25,3375.0,895.25,North,Chandigarh,Cash
+ORD0036,2025-07-22,CUST003,Rahul Kumar,Desk Lamp,Furniture,1,32.0,14.5,5.0,30.4,14.5,15.9,West,Ahmedabad,Cash
+ORD0041,2025-07-23,CUST008,Meera Nair,Webcam HD,Electronics,1,54.99,27.5,5.0,52.24,27.5,24.74,Central,Indore,UPI
+ORD0049,2025-07-27,CUST001,Aarav Sharma,Laptop,Computers,1,899.0,675.0,0.0,899.0,675.0,224.0,South,Chennai,Card
+ORD0146,2025-07-27,CUST001,Aarav Sharma,Laptop Stand,Accessories,1,29.5,12.75,0.0,29.5,12.75,16.75,Central,Indore,Card
+ORD0011,2025-07-30,CUST011,Rohan Joshi,External SSD 1TB,Storage,4,109.0,67.0,5.0,414.2,268.0,146.2,South,Bengaluru,Net Banking
+ORD0023,2025-08-03,CUST010,Isha Gupta,Webcam HD,Electronics,1,54.99,27.5,15.0,46.74,27.5,19.24,South,Hyderabad,UPI
+ORD0079,2025-08-04,CUST010,Isha Gupta,Desk Lamp,Furniture,3,32.0,14.5,15.0,81.6,43.5,38.1,North,Delhi,Cash
+ORD0048,2025-08-09,CUST001,Aarav Sharma,USB-C Hub,Accessories,3,39.99,19.0,0.0,119.97,57.0,62.97,West,Pune,Card
+ORD0099,2025-08-10,CUST011,Rohan Joshi,Desk Lamp,Furniture,1,32.0,14.5,10.0,28.8,14.5,14.3,North,Delhi,Cash
+ORD0148,2025-08-19,CUST003,Rahul Kumar,Webcam HD,Electronics,1,54.99,27.5,5.0,52.24,27.5,24.74,North,Jaipur,Net Banking
+ORD0132,2025-08-20,CUST005,Arjun Singh,Webcam HD,Electronics,1,54.99,27.5,0.0,54.99,27.5,27.49,Central,Nagpur,Card
+ORD0123,2025-08-21,CUST007,Vikram Das,Office Chair,Furniture,4,179.0,112.0,0.0,716.0,448.0,268.0,North,Delhi,UPI
+ORD0139,2025-08-21,CUST011,Rohan Joshi,Mechanical Keyboard,Accessories,2,69.99,34.5,10.0,125.98,69.0,56.98,East,Bhubaneswar,UPI
+ORD0060,2025-08-26,CUST008,Meera Nair,Laptop Stand,Accessories,1,29.5,12.75,0.0,29.5,12.75,16.75,South,Chennai,UPI
+ORD0092,2025-09-02,CUST002,Priya Reddy,Wireless Mouse,Accessories,2,18.99,8.25,0.0,37.98,16.5,21.48,West,Mumbai,Cash
+ORD0105,2025-09-06,CUST008,Meera Nair,External SSD 1TB,Storage,2,109.0,67.0,10.0,196.2,134.0,62.2,North,Chandigarh,Net Banking
+ORD0089,2025-09-10,CUST002,Priya Reddy,27-inch Monitor,Electronics,1,229.0,158.0,0.0,229.0,158.0,71.0,East,Guwahati,Card
+ORD0108,2025-09-11,CUST001,Aarav Sharma,Mechanical Keyboard,Accessories,5,69.99,34.5,10.0,314.95,172.5,142.45,Central,Nagpur,Net Banking
+ORD0066,2025-09-15,CUST006,Ananya Rao,Mechanical Keyboard,Accessories,3,69.99,34.5,0.0,209.97,103.5,106.47,East,Bhubaneswar,UPI
+ORD0129,2025-09-15,CUST002,Priya Reddy,27-inch Monitor,Electronics,1,229.0,158.0,10.0,206.1,158.0,48.1,West,Mumbai,Net Banking
+ORD0104,2025-09-19,CUST009,Kiran Verma,Wireless Mouse,Accessories,3,18.99,8.25,0.0,56.97,24.75,32.22,West,Ahmedabad,Net Banking
+ORD0025,2025-09-22,CUST010,Isha Gupta,Laptop,Computers,1,899.0,675.0,0.0,899.0,675.0,224.0,Central,Indore,Card
+ORD0083,2025-09-29,CUST010,Isha Gupta,Laptop,Computers,1,899.0,675.0,10.0,809.1,675.0,134.1,Central,Nagpur,Net Banking
+ORD0022,2025-10-13,CUST008,Meera Nair,Office Chair,Furniture,2,179.0,112.0,10.0,322.2,224.0,98.2,Central,Bhopal,Card
+ORD0055,2025-10-17,CUST012,Pooja Menon,27-inch Monitor,Electronics,3,229.0,158.0,5.0,652.65,474.0,178.65,West,Pune,Card
+ORD0059,2025-10-17,CUST004,Sneha Patel,Office Chair,Furniture,2,179.0,112.0,5.0,340.1,224.0,116.1,North,Jaipur,Cash
+ORD0078,2025-10-19,CUST012,Pooja Menon,Office Chair,Furniture,4,179.0,112.0,10.0,644.4,448.0,196.4,West,Mumbai,UPI
+ORD0128,2025-10-22,CUST010,Isha Gupta,Tablet,Computers,1,349.0,245.0,10.0,314.1,245.0,69.1,East,Bhubaneswar,Net Banking
+ORD0107,2025-10-22,CUST008,Meera Nair,Bluetooth Headphones,Electronics,3,89.99,43.0,15.0,229.47,129.0,100.47,North,Delhi,Cash
+ORD0102,2025-10-23,CUST008,Meera Nair,Bluetooth Headphones,Electronics,5,89.99,43.0,15.0,382.46,215.0,167.46,Central,Indore,UPI
+ORD0084,2025-11-01,CUST004,Sneha Patel,Laptop,Computers,4,899.0,675.0,0.0,3596.0,2700.0,896.0,West,Pune,Cash
+ORD0033,2025-11-02,CUST003,Rahul Kumar,Wireless Mouse,Accessories,2,18.99,8.25,15.0,32.28,16.5,15.78,Central,Bhopal,UPI
+ORD0016,2025-11-04,CUST012,Pooja Menon,27-inch Monitor,Electronics,2,229.0,158.0,10.0,412.2,316.0,96.2,North,Jaipur,Cash
+ORD0073,2025-11-07,CUST007,Vikram Das,Laptop,Computers,1,899.0,675.0,10.0,809.1,675.0,134.1,East,Bhubaneswar,UPI
+ORD0004,2025-11-09,CUST002,Priya Reddy,USB-C Hub,Accessories,1,39.99,19.0,5.0,37.99,19.0,18.99,North,Chandigarh,UPI
+ORD0085,2025-11-09,CUST001,Aarav Sharma,External SSD 1TB,Storage,3,109.0,67.0,5.0,310.65,201.0,109.65,Central,Nagpur,Card
+ORD0106,2025-11-11,CUST007,Vikram Das,Office Chair,Furniture,1,179.0,112.0,0.0,179.0,112.0,67.0,East,Guwahati,Net Banking
+ORD0068,2025-11-18,CUST007,Vikram Das,Laptop,Computers,2,899.0,675.0,0.0,1798.0,1350.0,448.0,West,Ahmedabad,UPI
+ORD0122,2025-11-21,CUST001,Aarav Sharma,Desk Lamp,Furniture,4,32.0,14.5,10.0,115.2,58.0,57.2,Central,Nagpur,UPI
+ORD0010,2025-11-27,CUST007,Vikram Das,Wireless Mouse,Accessories,1,18.99,8.25,0.0,18.99,8.25,10.74,East,Bhubaneswar,UPI
+ORD0117,2025-11-28,CUST007,Vikram Das,Laptop Stand,Accessories,5,29.5,12.75,0.0,147.5,63.75,83.75,Central,Bhopal,Net Banking
+ORD0125,2025-12-12,CUST010,Isha Gupta,Bluetooth Headphones,Electronics,1,89.99,43.0,15.0,76.49,43.0,33.49,West,Ahmedabad,Card
+ORD0054,2025-12-14,CUST006,Ananya Rao,Mechanical Keyboard,Accessories,5,69.99,34.5,5.0,332.45,172.5,159.95,Central,Nagpur,UPI
+ORD0088,2025-12-16,CUST006,Ananya Rao,Tablet,Computers,2,349.0,245.0,10.0,628.2,490.0,138.2,Central,Indore,Net Banking
+ORD0130,2025-12-19,CUST011,Rohan Joshi,27-inch Monitor,Electronics,5,229.0,158.0,5.0,1087.75,790.0,297.75,North,Chandigarh,Cash
+ORD0005,2025-12-28,CUST009,Kiran Verma,Webcam HD,Electronics,2,54.99,27.5,0.0,109.98,55.0,54.98,West,Mumbai,Net Banking
+ORD0137,2026-01-01,CUST011,Rohan Joshi,27-inch Monitor,Electronics,2,229.0,158.0,10.0,412.2,316.0,96.2,East,Guwahati,Cash
+ORD0114,2026-01-07,CUST005,Arjun Singh,External SSD 1TB,Storage,2,109.0,67.0,0.0,218.0,134.0,84.0,North,Chandigarh,Cash
+ORD0050,2026-01-11,CUST011,Rohan Joshi,27-inch Monitor,Electronics,4,229.0,158.0,5.0,870.2,632.0,238.2,East,Guwahati,Net Banking
+ORD0013,2026-01-12,CUST008,Meera Nair,Laptop Stand,Accessories,5,29.5,12.75,0.0,147.5,63.75,83.75,Central,Bhopal,UPI
+ORD0141,2026-01-15,CUST010,Isha Gupta,Webcam HD,Electronics,3,54.99,27.5,15.0,140.22,82.5,57.72,West,Ahmedabad,Card
+ORD0094,2026-01-16,CUST003,Rahul Kumar,Mechanical Keyboard,Accessories,2,69.99,34.5,0.0,139.98,69.0,70.98,South,Chennai,Cash
+ORD0069,2026-01-16,CUST007,Vikram Das,Wireless Mouse,Accessories,5,18.99,8.25,5.0,90.2,41.25,48.95,West,Ahmedabad,Card
+ORD0138,2026-01-27,CUST008,Meera Nair,Office Chair,Furniture,5,179.0,112.0,0.0,895.0,560.0,335.0,South,Hyderabad,Cash
+ORD0053,2026-01-29,CUST001,Aarav Sharma,External SSD 1TB,Storage,1,109.0,67.0,0.0,109.0,67.0,42.0,West,Ahmedabad,Card
+ORD0109,2026-02-02,CUST011,Rohan Joshi,Laptop Stand,Accessories,2,29.5,12.75,15.0,50.15,25.5,24.65,West,Pune,UPI
+ORD0002,2026-02-02,CUST010,Isha Gupta,Wireless Mouse,Accessories,1,18.99,8.25,0.0,18.99,8.25,10.74,Central,Bhopal,Card
+ORD0142,2026-02-21,CUST005,Arjun Singh,Mechanical Keyboard,Accessories,4,69.99,34.5,15.0,237.97,138.0,99.97,West,Mumbai,Cash
+ORD0012,2026-03-05,CUST005,Arjun Singh,27-inch Monitor,Electronics,1,229.0,158.0,15.0,194.65,158.0,36.65,Central,Nagpur,Net Banking
+ORD0124,2026-03-06,CUST006,Ananya Rao,Desk Lamp,Furniture,1,32.0,14.5,0.0,32.0,14.5,17.5,North,Delhi,Cash
+ORD0029,2026-03-08,CUST001,Aarav Sharma,Mechanical Keyboard,Accessories,2,69.99,34.5,15.0,118.98,69.0,49.98,North,Jaipur,UPI
+ORD0065,2026-03-09,CUST008,Meera Nair,Laptop Stand,Accessories,4,29.5,12.75,5.0,112.1,51.0,61.1,Central,Nagpur,Card
+ORD0037,2026-03-11,CUST002,Priya Reddy,Mechanical Keyboard,Accessories,1,69.99,34.5,15.0,59.49,34.5,24.99,Central,Bhopal,Card
+ORD0061,2026-03-14,CUST007,Vikram Das,Office Chair,Furniture,2,179.0,112.0,10.0,322.2,224.0,98.2,West,Mumbai,Card
+ORD0058,2026-03-15,CUST012,Pooja Menon,Laptop,Computers,3,899.0,675.0,15.0,2292.45,2025.0,267.45,West,Mumbai,UPI
+ORD0150,2026-03-17,CUST005,Arjun Singh,Laptop Stand,Accessories,5,29.5,12.75,0.0,147.5,63.75,83.75,Central,Indore,UPI
+ORD0015,2026-03-17,CUST011,Rohan Joshi,27-inch Monitor,Electronics,5,229.0,158.0,0.0,1145.0,790.0,355.0,North,Jaipur,Cash
+ORD0064,2026-03-20,CUST008,Meera Nair,Desk Lamp,Furniture,4,32.0,14.5,10.0,115.2,58.0,57.2,Central,Bhopal,Net Banking
+ORD0008,2026-03-21,CUST011,Rohan Joshi,Webcam HD,Electronics,1,54.99,27.5,5.0,52.24,27.5,24.74,South,Bengaluru,UPI
+ORD0087,2026-03-26,CUST012,Pooja Menon,Wireless Mouse,Accessories,1,18.99,8.25,0.0,18.99,8.25,10.74,West,Mumbai,Cash
+ORD0039,2026-03-27,CUST001,Aarav Sharma,Tablet,Computers,3,349.0,245.0,15.0,889.95,735.0,154.95,Central,Nagpur,Cash
+ORD0027,2026-03-28,CUST007,Vikram Das,Desk Lamp,Furniture,1,32.0,14.5,0.0,32.0,14.5,17.5,North,Jaipur,Cash
+ORD0074,2026-04-01,CUST011,Rohan Joshi,Desk Lamp,Furniture,2,32.0,14.5,5.0,60.8,29.0,31.8,South,Hyderabad,UPI
+ORD0119,2026-04-02,CUST002,Priya Reddy,USB-C Hub,Accessories,2,39.99,19.0,15.0,67.98,38.0,29.98,East,Bhubaneswar,UPI
+ORD0070,2026-04-08,CUST006,Ananya Rao,27-inch Monitor,Electronics,2,229.0,158.0,0.0,458.0,316.0,142.0,West,Ahmedabad,Net Banking
+ORD0093,2026-04-16,CUST008,Meera Nair,Laptop,Computers,1,899.0,675.0,0.0,899.0,675.0,224.0,East,Kolkata,UPI
+ORD0076,2026-04-22,CUST012,Pooja Menon,Mechanical Keyboard,Accessories,2,69.99,34.5,0.0,139.98,69.0,70.98,West,Pune,Cash
+ORD0026,2026-04-26,CUST006,Ananya Rao,Bluetooth Headphones,Electronics,1,89.99,43.0,0.0,89.99,43.0,46.99,West,Pune,Net Banking
+ORD0121,2026-04-26,CUST006,Ananya Rao,27-inch Monitor,Electronics,1,229.0,158.0,10.0,206.1,158.0,48.1,North,Jaipur,Net Banking
+ORD0149,2026-05-04,CUST009,Kiran Verma,Desk Lamp,Furniture,1,32.0,14.5,10.0,28.8,14.5,14.3,East,Guwahati,UPI
+ORD0038,2026-05-09,CUST006,Ananya Rao,USB-C Hub,Accessories,5,39.99,19.0,0.0,199.95,95.0,104.95,South,Bengaluru,Card
+ORD0115,2026-05-09,CUST010,Isha Gupta,Wireless Mouse,Accessories,1,18.99,8.25,5.0,18.04,8.25,9.79,Central,Nagpur,Net Banking
+ORD0096,2026-05-13,CUST007,Vikram Das,Laptop,Computers,4,899.0,675.0,5.0,3416.2,2700.0,716.2,Central,Indore,UPI
+ORD0135,2026-05-17,CUST005,Arjun Singh,27-inch Monitor,Electronics,4,229.0,158.0,5.0,870.2,632.0,238.2,West,Ahmedabad,Cash
+ORD0113,2026-05-23,CUST004,Sneha Patel,27-inch Monitor,Electronics,2,229.0,158.0,10.0,412.2,316.0,96.2,West,Pune,Card
+ORD0017,2026-05-25,CUST011,Rohan Joshi,USB-C Hub,Accessories,2,39.99,19.0,0.0,79.98,38.0,41.98,East,Guwahati,Card
+ORD0120,2026-05-30,CUST011,Rohan Joshi,Laptop,Computers,1,899.0,675.0,0.0,899.0,675.0,224.0,West,Mumbai,UPI
+ORD0098,2026-06-03,CUST008,Meera Nair,USB-C Hub,Accessories,1,39.99,19.0,10.0,35.99,19.0,16.99,Central,Indore,UPI
+ORD0021,2026-06-06,CUST004,Sneha Patel,27-inch Monitor,Electronics,2,229.0,158.0,15.0,389.3,316.0,73.3,West,Ahmedabad,Card
+ORD0051,2026-06-11,CUST010,Isha Gupta,Wireless Mouse,Accessories,1,18.99,8.25,5.0,18.04,8.25,9.79,South,Bengaluru,UPI
+ORD0003,2026-06-14,CUST003,Rahul Kumar,Laptop Stand,Accessories,2,29.5,12.75,5.0,56.05,25.5,30.55,North,Jaipur,Net Banking
+ORD0080,2026-06-14,CUST001,Aarav Sharma,Office Chair,Furniture,2,179.0,112.0,15.0,304.3,224.0,80.3,East,Bhubaneswar,Net Banking
+ORD0082,2026-06-25,CUST006,Ananya Rao,Laptop,Computers,2,899.0,675.0,15.0,1528.3,1350.0,178.3,East,Kolkata,UPI
+ORD0057,2026-06-27,CUST010,Isha Gupta,Wireless Mouse,Accessories,1,18.99,8.25,0.0,18.99,8.25,10.74,West,Ahmedabad,Cash

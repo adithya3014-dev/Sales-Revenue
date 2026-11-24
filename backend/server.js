@@ -69,7 +69,8 @@ app.use(cors({
     return callback(new Error('Origin is not allowed by the REVORA API.'));
   }
 }));
-app.use(express.json({ limit: '2mb' }));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 function getSessionToken(req) {
   const cookie = (req.headers.cookie || '')
@@ -1075,7 +1076,19 @@ app.post('/api/data/upload', async (req, res) => {
     for (const row of rows) {
       await connection.execute(
         `INSERT INTO sales (order_id, order_date, product_name, product_category, quantity_sold, sales_revenue, unit_price, discount, customer_name, profit, promotion_details, region)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON DUPLICATE KEY UPDATE
+           order_date = VALUES(order_date),
+           product_name = VALUES(product_name),
+           product_category = VALUES(product_category),
+           quantity_sold = VALUES(quantity_sold),
+           sales_revenue = VALUES(sales_revenue),
+           unit_price = VALUES(unit_price),
+           discount = VALUES(discount),
+           customer_name = VALUES(customer_name),
+           profit = VALUES(profit),
+           promotion_details = VALUES(promotion_details),
+           region = VALUES(region)`,
         [row.orderId, row.orderDate, row.productName, row.category,
           row.quantity, row.sales, row.price, row.discount,
           row.customerName, row.profit, row.promotion, row.region]
