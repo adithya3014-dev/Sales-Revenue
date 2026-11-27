@@ -74,7 +74,7 @@ for ($i = 0; $i -lt 30; $i++) {
     Start-Sleep -Seconds 1
     if (Test-Path $tunnelLog) {
         $logContent = Get-Content $tunnelLog -Raw -ErrorAction SilentlyContinue
-        if ($logContent -match 'https://[a-zA-Z0-9-]+\.trycloudflare\.com') {
+        if ($logContent -match 'https:\/\/(?!api\.)[a-zA-Z0-9-]+\.trycloudflare\.com') {
             $tunnelUrl = $matches[0]
             break
         }
