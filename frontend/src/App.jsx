@@ -569,6 +569,19 @@ function App() {
   }, [authenticated, activePage, currentUser?.role]);
 
   useEffect(() => {
+    if (!authenticated || activePage !== 'Model Comparison') return;
+    fetchModelMetrics()
+      .then((response) => {
+        if (response?.data) {
+          setModelMetrics(response.data);
+        }
+      })
+      .catch((err) => {
+        console.warn('Unable to refresh model comparison metrics:', err);
+      });
+  }, [authenticated, activePage]);
+
+  useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const tokenFromUrl = params.get('token') || '';
     if (tokenFromUrl) {
@@ -1511,7 +1524,37 @@ function App() {
             </SectionCard>
           </>
         );
-      case 'Model Comparison':
+      case 'Model Comparison': {
+        const metricsMap = (() => {
+          if (!modelMetrics) return {};
+          if (modelMetrics.metrics && typeof modelMetrics.metrics === 'object' && Object.keys(modelMetrics.metrics).length > 0) {
+            return modelMetrics.metrics;
+          }
+          if (modelMetrics.models && typeof modelMetrics.models === 'object' && Object.keys(modelMetrics.models).length > 0) {
+            return modelMetrics.models;
+          }
+          if (Array.isArray(modelMetrics) && modelMetrics.length > 0) {
+            const map = {};
+            modelMetrics.forEach((m) => {
+              const name = m.model_name || m.model || m.name || 'Model';
+              map[name] = {
+                MAE: m.mae ?? m.MAE ?? 0,
+                RMSE: m.rmse ?? m.RMSE ?? 0,
+                MAPE: m.mape ?? m.MAPE ?? 0
+              };
+            });
+            return map;
+          }
+          return {};
+        })();
+
+        const chartData = (() => {
+          if (!modelMetrics) return [];
+          const list = modelMetrics.historical || modelMetrics.actualVsPredicted || modelMetrics.history;
+          if (Array.isArray(list) && list.length > 0) return list;
+          return [];
+        })();
+
         return (
           <>
             <SectionCard title="Model Evaluation" subtitle="Trained on the bundled sample dataset; not production data">
@@ -1526,14 +1569,22 @@ function App() {
                     </tr>
                   </thead>
                   <tbody>
-                    {Object.entries(modelMetrics?.metrics || {}).map(([name, values]) => (
-                      <tr key={name}>
-                        <td>{name}</td>
-                        <td>{values.MAE}</td>
-                        <td>{values.RMSE}</td>
-                        <td>{values.MAPE}%</td>
+                    {Object.entries(metricsMap).length > 0 ? (
+                      Object.entries(metricsMap).map(([name, values]) => (
+                        <tr key={name}>
+                          <td><strong>{name}</strong></td>
+                          <td>{typeof values.MAE === 'number' ? values.MAE.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : (values.MAE || values.mae || '-')}</td>
+                          <td>{typeof values.RMSE === 'number' ? values.RMSE.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) : (values.RMSE || values.rmse || '-')}</td>
+                          <td>{typeof values.MAPE === 'number' ? `${values.MAPE}%` : `${values.MAPE || values.mape || 0}%`}</td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={4} style={{ textAlign: 'center', padding: '1.5rem', color: '#6b7280' }}>
+                          Loading model metrics...
+                        </td>
                       </tr>
-                    ))}
+                    )}
                   </tbody>
                 </table>
               </div>
@@ -1542,20 +1593,21 @@ function App() {
             <SectionCard title="Actual vs Predicted Revenue" subtitle="Forecast accuracy comparison across selected model outputs">
               <div className="chart-wrap large">
                 <ResponsiveContainer width="100%" height={300}>
-                  <AreaChart data={modelMetrics?.historical || []}>
+                  <AreaChart data={chartData}>
                     <CartesianGrid strokeDasharray="3 3" vertical={false} />
                     <XAxis dataKey="month" />
-                    <YAxis />
+                    <YAxis tickFormatter={(val) => `$${(val / 1000).toFixed(0)}k`} />
                     <Tooltip formatter={(value) => formatCurrency(value)} />
                     <Legend />
-                    <Area type="monotone" dataKey="actual" stroke="#1f6feb" fill="#dbeafe" />
-                    <Area type="monotone" dataKey="predicted" stroke="#14b8a6" fill="#dcfce7" />
+                    <Area type="monotone" dataKey="actual" name="Actual Revenue" stroke="#1f6feb" fill="#dbeafe" />
+                    <Area type="monotone" dataKey="predicted" name="Predicted Revenue" stroke="#14b8a6" fill="#dcfce7" />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
             </SectionCard>
           </>
         );
+      }
       case 'EDA':
         return (
           <>

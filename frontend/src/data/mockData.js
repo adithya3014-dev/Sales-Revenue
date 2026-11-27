@@ -57,11 +57,39 @@ export const DEMO_CUSTOMERS = [
   { id: 5, customerName: 'Emma R', customerId: 'CUST-05', segment: 'SMB', region: 'East' }
 ];
 
-export const DEMO_MODEL_METRICS = [
-  { model_name: 'Random Forest Regressor', mae: 1420.35, rmse: 1890.12, mape: 4.82, evaluation_period: '2024-2025' },
-  { model_name: 'Gradient Boosting', mae: 1530.80, rmse: 2010.45, mape: 5.15, evaluation_period: '2024-2025' },
-  { model_name: 'Linear Regression', mae: 2150.00, rmse: 2840.60, mape: 7.40, evaluation_period: '2024-2025' }
-];
+export const DEMO_MODEL_METRICS = {
+  metrics: {
+    'Linear Regression': { MAE: 4310.82, RMSE: 5023.18, MAPE: 2.05 },
+    'Random Forest': { MAE: 27011.51, RMSE: 34981.75, MAPE: 12.32 },
+    'Time-Series Model': { MAE: 55722.48, RMSE: 64612.52, MAPE: 29.29 }
+  },
+  models: {
+    'Linear Regression': { MAE: 4310.82, RMSE: 5023.18, MAPE: 2.05 },
+    'Random Forest': { MAE: 27011.51, RMSE: 34981.75, MAPE: 12.32 },
+    'Time-Series Model': { MAE: 55722.48, RMSE: 64612.52, MAPE: 29.29 }
+  },
+  historical: [
+    { month: '2025-05', actual: 286598.16, predicted: 278232.77 },
+    { month: '2025-06', actual: 120547.64, predicted: 122744.71 },
+    { month: '2025-07', actual: 156904.02, predicted: 160548.01 },
+    { month: '2025-08', actual: 218341.65, predicted: 209886.12 },
+    { month: '2025-09', actual: 217539.44, predicted: 222665.53 },
+    { month: '2025-10', actual: 272333.00, predicted: 274994.31 },
+    { month: '2025-11', actual: 213341.38, predicted: 210703.04 },
+    { month: '2025-12', actual: 158104.24, predicted: 159503.07 }
+  ],
+  actualVsPredicted: [
+    { month: '2025-05', actual: 286598.16, predicted: 278232.77 },
+    { month: '2025-06', actual: 120547.64, predicted: 122744.71 },
+    { month: '2025-07', actual: 156904.02, predicted: 160548.01 },
+    { month: '2025-08', actual: 218341.65, predicted: 209886.12 },
+    { month: '2025-09', actual: 217539.44, predicted: 222665.53 },
+    { month: '2025-10', actual: 272333.00, predicted: 274994.31 },
+    { month: '2025-11', actual: 213341.38, predicted: 210703.04 },
+    { month: '2025-12', actual: 158104.24, predicted: 159503.07 }
+  ],
+  bestModel: 'Linear Regression'
+};
 
 export function getDemoDashboard(params = {}) {
   const filtered = filterDemoSales(params);
